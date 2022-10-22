@@ -4,7 +4,7 @@ import random
 import os
 
 
-def plot_images(image_folder="food101", img_count=4):
+def plot_images(image_folder="data", img_count=4):
     """
     Plot <img_count> random images from <folder_name> from subfolders
     """
@@ -31,7 +31,7 @@ def plot_images(image_folder="food101", img_count=4):
 
 def plot_losses(history):
     """
-    Plot <img_count> random images from <folder_name> from subfolders
+    Plot losses from <history> generated during training
     """
     fig = plt.figure()
     fig.set_size_inches(18.5, 10.5)
