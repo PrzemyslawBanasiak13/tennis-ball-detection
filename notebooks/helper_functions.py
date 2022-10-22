@@ -13,9 +13,8 @@ def plot_images(image_folder="data", img_count=4):
     fig = plt.figure()
     fig.set_size_inches(18.5, 10.5)
 
-    for folder in os.listdir(image_folder):
-        for image in os.listdir(image_folder + '/' + folder):
-            all_images.append(os.path.join(image_folder, folder, image))
+    for image in os.listdir(image_folder):
+        all_images.append(os.path.join(image_folder, image))
 
     for i in range(img_count):
         im_path = random.choice(all_images)
